@@ -1,11 +1,11 @@
 // src\Footer\Footer.js
 import React from 'react';
-import '../App.css';
+import '../App.scss';
 
 function Footer() {
   return (
     
-    <div class="center">
+    <div className="center">
             All rights reserved &copy; Fabio Nolasco
         </div>
     

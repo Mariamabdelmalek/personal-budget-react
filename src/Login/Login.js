@@ -1,11 +1,11 @@
 // src\Login\Login.js
 import React from 'react';
-import '../App.css';
+import '../App.scss';
 
 function Login() {
   return (
     <div >
-      Login Page
+      Login Page 
     </div>
   );
 }

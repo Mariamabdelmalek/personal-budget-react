@@ -1,4 +1,7 @@
-/* src\App.css */
+/* src\App.scss */
+@use './styles/variables' as *;
+
+
 .App {
   text-align: center;
 }
@@ -36,4 +39,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+#d3Chart {
+  width: 100%;
+  height: 300px;
+  display: block;
+  margin-top: 20px;
+  background: $light-gray;
+  border-radius: 8px;
 }

@@ -348,15 +348,18 @@ template {
 [hidden] {
   display: none;
 }
+* /* Global Box-Sizing */
 * {
   box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
   font-size: 10px;
-  font-family: Tahoma, Arial;
+  font-family: Tahoma, Arial, sans-serif;
 }
 
+/* Navigation Bar */
 nav {
   width: 100%;
   background-color: #4d5791;
@@ -364,11 +367,9 @@ nav {
   padding: 0 40px;
 }
 
-
-
-nav ul  {
+nav ul {
   margin: 0;
-  padding: 0 ;
+  padding: 0;
   list-style: none;
   display: flex;
 }
@@ -383,7 +384,7 @@ nav ul li a {
   margin: 0;
 }
 
-nav ul li a:hover  {
+nav ul li a:hover {
   background-color: white;
   color: #4d5791;
 }
@@ -392,13 +393,12 @@ nav ul li a:hover  {
 div.hero {
   height: 350px;
   background-color: #b4c6f0;
-  background-image: url('/public/bg.png');
-  background-size: cover;  
+  background-image: url('assets/bg.png');
+  background-size: 400px;
   background-repeat: no-repeat;
   background-position: center bottom;
-  padding-top: 40px;
+ 
 }
-
 
 div.hero h1,
 div.hero h2 {
@@ -414,6 +414,7 @@ div.hero h1 {
 
 div.hero h2 {
   color: #4d5791;
+  font: sans-serif;
 }
 
 .container {
@@ -422,8 +423,31 @@ div.hero h2 {
 }
 
 .page-area {
+  color: #0a0909;
   max-width: 768px;
   display: inline-block;
+  margin: 0 auto;
+  font-size: small;
+}
+ 
+
+.center {
+  text-align: center;
+}
+
+article{
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  text-align: justify;
+  margin: 10px;
+  background: none;
+  font: 1em sans-serif;
+  
+}
+
+.center {
+  text-align: center;
 }
 
 .bottom {
@@ -431,24 +455,6 @@ div.hero h2 {
   background-color: #b4c6f0;
   padding: 40px;
 }
-
-.center {
-  text-align: center;
-}
-
-.container div.text-box {
-  display: block;
-  width: 100%;
-  max-width: 340px;
-  text-align: justify;
-  margin: 20px;
-}
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-
 
 @media screen and (max-width: 768px) {
   div.hero {
@@ -480,4 +486,22 @@ div.hero h2 {
 #myChart {
   width: 400px;
   height: 400px;
+}
+.footer{
+  background-color: #4d5791;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font: 1.2em sans-serif;
+}
+
+
+.home-description {
+  font-size: 1.2em; 
+  text-align: center;
+  margin: 20px;
+  font: sans-serif;
 }

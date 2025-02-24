@@ -1,13 +1,13 @@
 // src\Hero\Hero.js
 import React from 'react';
-import '../App.css';
+import '../App.scss';
 
 function Hero() {
   return (
-    <header class="hero">
+    <div className="hero"> 
     <h1>Personal Budget</h1>
     <h2>A personal-budget management app</h2>
-</header>
+</div>
   );
 }
 
